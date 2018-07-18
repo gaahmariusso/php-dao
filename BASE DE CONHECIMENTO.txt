@@ -1,0 +1,11 @@
+*** BASE DE CONHECIMENTO PHP ***
+
+
+$logger->write(LOG_INFO,'(pos): '.($file->rule->aplicacao,1)); (printar log SEM serviço)
+
+$logger->write(LOG_INFO,'(pos): '.print_r($file->rule->aplicacao,1)); (printar log quando tem serviço)
+$logger->write(LOG_INFO,'$DADOS->dados[comprovante]'.print_r($DADOS->dados['comprovante'], 1));
+
+unset($file->rule->aplicacao); (apagar servico para teste)
+
+$logger = logger::getInstance(); (design pattern singleton)
